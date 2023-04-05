@@ -33,7 +33,7 @@ app.delete('/users/:id', userController.deleteUserById);
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('API is working!');
+  res.send('<h1 style="text-align:center; margin-top:250px">API is working</h1>!');
 });
 
 app.listen(PORT, () => {
