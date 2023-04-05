@@ -1,5 +1,5 @@
 const User = require('../models/user');
-
+// CREATE
 exports.createUser = async (req, res, next) => {
   const { name, email, password } = req.body;
   try {
@@ -10,7 +10,7 @@ exports.createUser = async (req, res, next) => {
     next(error);
   }
 };
-
+// READ
 exports.getUsers = async (req, res, next) => {
   try {
     const users = await User.find();
@@ -32,7 +32,7 @@ exports.getUserById = async (req, res, next) => {
     next(error);
   }
 };
-
+// UPDATE
 exports.updateUserById = async (req, res, next) => {
   const { id } = req.params;
   const { name, email, password } = req.body;
@@ -50,7 +50,7 @@ exports.updateUserById = async (req, res, next) => {
     next(error);
   }
 };
-
+// DELETE
 exports.deleteUserById = async (req, res, next) => {
   const { id } = req.params;
   try {
