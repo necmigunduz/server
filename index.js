@@ -14,7 +14,10 @@ app.use(bodyParser.json());
 // Set up product routes
 app.get('/products', productController.getProducts);
 app.get('/products/:id', productController.getProductById);
-app.get('/products/category/:category', productController.getProductsByCategory);
+app.get(
+  '/products/category/:category',
+  productController.getProductsByCategory
+);
 app.post('/products', productController.createProduct);
 app.put('/products/:id', productController.updateProductById);
 app.delete('/products/:id', productController.deleteProductById);
@@ -28,6 +31,11 @@ app.delete('/users/:id', userController.deleteUserById);
 
 // Start server
 const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('API is working!');
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
