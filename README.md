@@ -16,10 +16,12 @@
 - install dependencies `npm install`,
 - create a .env file in the root folder,
 - add your MongoDB info into it as follows:
-  `PORT=3000
-   DB_USER=--------
-   DB_PASSWORD=---------
-   DB_HOST=---------.---------.mongodb.net`,
+  ````
+  PORT=3000
+  DB_USER=--------
+  DB_PASSWORD=---------
+  DB_HOST=---------.---------.mongodb.net
+  ````,
 - start the project `npm run dev`.
 
 ## Authors
