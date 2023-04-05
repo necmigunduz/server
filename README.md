@@ -21,7 +21,7 @@
   DB_USER=--------
   DB_PASSWORD=---------
   DB_HOST=---------.---------.mongodb.net
-  ```,
+  ,
 - start the project `npm run dev`.
 
 ## Authors
